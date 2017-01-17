@@ -16,6 +16,9 @@ Person
 * ```energy_level```
   * data type: integer
   * description: current energy level
+* ```laptop```
+  * data type: class
+  * description: student's laptop
 
 ## Class methods
 

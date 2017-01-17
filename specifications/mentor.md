@@ -11,6 +11,9 @@ Person
 * ```nickname```
   * data type: string
   * description: the mentors's secret nickname between the students
+* ```device```
+  * data type: class
+  * description: something useful
 
 ## Class methods
 
