@@ -21,17 +21,8 @@ Person
 
 
 ## Class methods
+None
 
-### ```create_by_csv```
-
-From the give csv file create a list of ```mentors```
-
-#### Arguments
-csv file
-
-#### Return value
-
-list of ```mentors```
 
 ## Instance methods
 
@@ -39,8 +30,28 @@ list of ```mentors```
 The constructor of the object.
 
 #### Arguments
-
 nickname
+
+#### Return value
+None
+
+
+
+### ```get_salary```
+Returns "secret"
+
+#### Arguments
+None
+
+#### Return value
+string: "secret"
+
+
+### ```change_anger_level```
+changes anger level by the given number(positive or negative)
+
+#### Arguments
+value: int - anger_level changes by this value
 
 #### Return value
 None
