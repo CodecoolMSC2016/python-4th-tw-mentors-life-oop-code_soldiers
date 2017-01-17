@@ -8,9 +8,7 @@ Mentor
 
 ## Attributes
 
-* ```alcohol_level```
-  * data type: integer
-  * description: level of the mentor alcohol level
+None
 
 ## Class methods
 
@@ -24,8 +22,6 @@ The constructor of the object.
 #### Arguments
 
 Mentor class arguments
-
-Alcohol level
 
 
 #### Return value
