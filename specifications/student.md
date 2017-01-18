@@ -20,30 +20,30 @@ Person
   * data type: class
   * description: student's laptop
 
+
 ## Class methods
 
 ### ```create_by_csv```
 
- Gets a csv file path as an argument (the csv contains all the data needed to instantiate a student object) and gives back a list of students
+From the give csv file create a list of ```students```
 
 #### Arguments
-
-csv_file: the file where the datas are stored
+csv file
 
 #### Return value
 
-```CodecoolClass``` object
+list of ```students```
 
 ## Instance methods
 
 ### ```__init__```
-
 The constructor of the object.
-Calls parent class Person's constructor and also sets the attributes of this class. If any is empty: raises error.
 
 #### Arguments
 
-All of the arguments of the class itself.
+* knowledge_level
+* energy_level
+* laptop
 
 #### Return value
 None
