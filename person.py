@@ -8,4 +8,4 @@ class Person:
 
     @property
     def fullname(self):
-        return self.first_name + " " self.last_name
+        return self.first_name + " " + self.last_name
