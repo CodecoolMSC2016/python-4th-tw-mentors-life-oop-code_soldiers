@@ -1,4 +1,5 @@
 from person import Person
+from device import Device
 
 
 class Mentor(Person):
@@ -7,7 +8,7 @@ class Mentor(Person):
         self.nickname = nickname
         self.device = None
 
-    def get_device(self, name, price, is_broken=False):
+    def set_device(self, name, price, is_broken=False):
         self.device = Device(name, price, is_broken)
 
     @classmethod
