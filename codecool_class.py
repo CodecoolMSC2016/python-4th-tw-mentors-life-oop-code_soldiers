@@ -10,8 +10,10 @@ class CodecoolClass:
         self.students = list(students)
 
     def find_student_by_full_name(self, full_name):
-        # TODO: implement thi$
-        pass
+        for student in self.students:
+            if student.fullname.casefold() == full_name.casefold():
+                return student
+        return None
 
     @classmethod
     def generate_local(cls):
