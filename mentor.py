@@ -2,8 +2,8 @@ from person import Person
 
 
 class Mentor(Person):
-    def __init__(self, first_name, last_name, year_of_birth, gender, nickname):
-        super().__init__(first_name, last_name, year_of_birth, gender)
+    def __init__(self, first_name, last_name, year_of_birth, gender, alcohol_level, nickname):
+        super().__init__(first_name, last_name, year_of_birth, gender, alcohol_level)
         self.nickname = nickname
         self.device = None
 
