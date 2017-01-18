@@ -1,5 +1,7 @@
 from time import sleep
 
+print("Welcome to Code Soldiers' auto debugger! Let's get debug your freakin' awsome code 😁 !\n")
+
 
 def printProgressBar(iteration, total, prefix='', suffix='', decimals=1, length=100, fill='█'):
     """
@@ -29,8 +31,8 @@ for item in items:
     index += 1
     printProgressBar(index, width, prefix='Progress:', suffix='Complete', length=50)
 
-print("1 Error found: FileNotFoundError\nDescription: [Errno 2] No such file or directory: 'codecool_class.py'\n")
-print(input("Press any key to continue..."), end="\r")
+print("\n1 Error found: FileNotFoundError\nDescription: [Errno 2] No such file or directory: 'codecool_class.py'\n")
+print(input("Press enter to continue...\n"), end='\r')
 
 index = 0
 printProgressBar(index, width, prefix='Searching codecool_class.py:', suffix='Complete', length=50)
@@ -39,8 +41,8 @@ for item in items:
     index += 1
     printProgressBar(index, width, prefix='Searching codecool_class.py:', suffix='Complete', length=50)
 
-print("File was found!\n")
-print(input("Press any key to continue..."), end="\r")
+print("\nFile was found!\n")
+print(input("Press enter to continue...\n"), end='\r')
 
 index = 0
 printProgressBar(index, width, prefix='Debugging:', suffix='Complete', length=50)
@@ -58,4 +60,9 @@ with open("story.py", "w+") as output_file:
         if line != "print(error_message)\n" and line != "sys.exit(0)\n":
             output_file.write(line)
 
-print("Debugging was successfull!")
+print("\nDebugging was successfull!\n")
+sleep(1)
+for index in range(10, 0, -1):
+    text = "Code Soldiers' auto debugger will exit in {}. Have fun and do not worry, I will be back 😉 !".format(index)
+    print(text, end='\r\r')
+    sleep(1)
