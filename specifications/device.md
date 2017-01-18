@@ -26,7 +26,6 @@ None
 ### ```__init__```
 
 The constructor of the object.
-Calls parent class Person's constructor and also sets the attributes of this class. If any is empty: raises error.
 
 #### Arguments
 All of the arguments of the class itself.
