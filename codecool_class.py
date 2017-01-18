@@ -15,6 +15,8 @@ class CodecoolClass:
 
     @classmethod
     def generate_local(cls):
-        local_mentors = []
-        local_students = []
+        local_mentors = [Mentor("Imre", "Lindi", 1990, "Male", 0, "Imicsanga"),
+                         Mentor("Pál", "Monoczki", 1975, "Male", 0, "Pali")]
+        local_students = [Student("László", "Székely-Tóth", 1993, "Male", 0],
+                          Student("Dávid", "Szilágyi", 1993, "Male", 0)]
         return cls("msc", 2016, local_mentors, local_students)
