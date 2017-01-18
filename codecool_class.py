@@ -9,11 +9,18 @@ class CodecoolClass:
         self.mentors = list(mentors)
         self.students = list(students)
 
-    def find_student_by_full_name(self, full_name):
-        for student in self.students:
-            if student.fullname.casefold() == full_name.casefold():
-                return student
+    @staticmethod
+    def _search(db, full_name):
+        for person in db:
+            if person.fullname.casefold() == full_name.casefold():
+                return person
         return None
+
+    def find_mentor_by_full_name(self, full_name):
+        return self._search(self.mentors, full_name)
+
+    def find_student_by_full_name(self, full_name):
+        return self._search(self.students, full_name)
 
     @classmethod
     def generate_local(cls):
