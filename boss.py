@@ -1,5 +1,6 @@
 from person import Person
 
+
 class Boss(Person):
     def __init__(self, first_name, last_name, year_of_birth, gender, nickname, salary, anger_level):
         super().__init__(first_name, last_name, year_of_birth, gender)
