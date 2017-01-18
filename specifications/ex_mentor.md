@@ -26,3 +26,25 @@ Mentor class arguments
 
 #### Return value
 None
+
+### ```set_alcohol_level```
+Increase alcohol level of the ex mentor.
+
+#### Arguments
+
+amount
+
+
+#### Return value
+None
+
+### ```cry```
+Ex mentor starts crying.
+
+#### Arguments
+
+None
+
+
+#### Return value
+"Brühühü"
