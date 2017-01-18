@@ -11,5 +11,3 @@ class CodecoolClass:
 
     def find_student_by_full_name(self, full_name):
         # TODO: implement thi$
-
-    
