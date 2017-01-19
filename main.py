@@ -20,3 +20,5 @@ for count in range(3):
         sleep(0.5)
 system("clear")
 system("python3 story.py")
+with open("backup_story.py") as backup, open("story.py", 'w') as story:
+    story.write(backup.read())

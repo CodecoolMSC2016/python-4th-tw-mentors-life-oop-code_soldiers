@@ -55,8 +55,8 @@ print("                     |  `----.|  `--'  | |  '--'  ||  |____              
 print("                      \______| \______/  |_______/ |_______|                      ")
 print("     _______.  ______    __       _______   __   _______ .______          _______.")
 print("    /       | /  __  \  |  |     |       \ |  | |   ____||   _  \        /       |")
-# print(error_message)
-# sys.exit(0)
+print(error_message)
+sys.exit(0)
 print("   |   (----`|  |  |  | |  |     |  .--.  ||  | |  |__   |  |_)  |      |   (----`")
 print("    \   \    |  |  |  | |  |     |  |  |  ||  | |   __|  |      /        \   \    ")
 print(".----)   |   |  `--'  | |  `----.|  '--'  ||  | |  |____ |  |\  \----.----)   |   ")
@@ -66,7 +66,7 @@ time.sleep(2)
 main_story = ["One day when Humen Rajtnau went to Codecool Miskolc",
               "<< CODECOOL_MSC GENERATED >>",
               "he realised that the MentorBots needed an upgrade,",
-              "because they got boring and lazy, and their knowledge",
+              "because they became boring and lazy, and their knowledge",
               "has became outdated a long time ago.",
               "So he started to collect all the MentorBots...",
               "... after 5 hours he got so bored,",
@@ -80,7 +80,7 @@ main_story = ["One day when Humen Rajtnau went to Codecool Miskolc",
               "The codecoolers started working on their laptops,",
               "<< CODECOOLERS GET LAPTOPS >>",
               "They started coding the bots...",
-              "Everybody worked hard, so their energy level decreased",
+              "Everybody worked so hard, their energy level decreased",
               "<< CODECOOLERS ENERGY_LEVEL DECREASED >>",
               "According to Humen's requirements, they started testing the bots.",
               "To communicate with each other,",
@@ -97,21 +97,21 @@ main_story = ["One day when Humen Rajtnau went to Codecool Miskolc",
               "<< IMICSANGA SOLD HIS LAPTOP ON THE NET AND BOUGHT A HOMEBREWER >>",
               "Humen heard about it and became very upset.",
               "He just fired Imicsanga 😧 !",
-              "Because he was angry he forgot one rule of the new MentorBots:",
-              "They should only capabile of work in Codecools!",
+              "He was so angry he forgot one rule of the new MentorBots:",
+              "They should only capable of work in Codecools!",
               "<< IMICSANGA BECAME AN EX MENTOR >>",
-              "The codecoolers did not write a function what a MentorBot should do if he gets fired.",
+              "The codecoolers have not writen a function what a MentorBot should do if he gets fired.",
               "So Imicsanga started crying and drinking because he do not what to do without Codecool.",
               "<< IMICSANGA ALCOHOL_LEVEL INCREASED >>",  # 39
-              "Becasue the other MentorBot communicate with Imicsanga their system crashed...",
-              "Also their and codecoolers' laptops!",
-              "<< ALL LAPTOPS IS BROKEN! >>",
-              "After destroying laptops, they started to destroy Codecool and codecoolers.",
-              "<< CODECOOL STUDENTS DESTROYED >>",
+              "Because every MentorBot are connected with Imicsanga, their system crashed...",
+              "Their and codecoolers' laptops too!",
+              "<< ALL LAPTOPS BROKEN! >>",
+              "After destroying laptops, they started destroying Codecool and codecoolers.",
+              "<< CODECOOL STUDENTS ELIINATED >>",
               "<< CODECOOL_MSC DESTROYED >>",
-              "Without Codecool and codecoolers the MentorBots did not know what's next...",
+              "Without Codecool and codecoolers, the MentorBots did not know what's next...",
               "So they just put themselves into sleep mode,",
-              "until someone can make a good firmware for them...",
+              "until someone can make a stable firmware for them...",
               "Maybe there is somebody...",
               "Maybe?"]
 
