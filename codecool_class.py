@@ -24,13 +24,8 @@ class CodecoolClass:
 
     @classmethod
     def generate_local(cls):
-        local_mentors = [Mentor("Imre", "Lindi", 1990, "Male", "Imicsanga"),
-                         Mentor("Pál", "Monoczki", 1975, "Male", "Pali"),
-                         Mentor("Attila", "Molnár", 1980, "Male", "Atesz")]
         local_students = [Student("László", "Székely-Tóth", 1993, "Male", 80, 10),
                           Student("Dávid", "Szilágyi", 1993, "Male", 80, 60),
                           Student("Tamás", "Kenyeres", 1997, "Male", 80, 10)]
-        return cls("msc", 2016, local_mentors + Mentor.create_by_csv("data/mentors.csv"),
+        return cls("msc", 2016, Mentor.create_by_csv("data/mentors.csv"),
                    local_students + Student.create_by_csv("data/students.csv"))
-
-s = CodecoolClass.generate_local()
