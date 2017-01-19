@@ -18,6 +18,6 @@ class Student(Person):
             lines = csv_file.readlines()
         students_list = []
         for line in lines:
-            first, last, birth, gender = line.split(",")
+            first, last, birth, gender, knowledge_level, energy_level = line.split(",")
             students_list.append(cls(first, last, birth, gender, knowledge_level, energy_level))
         return students_list

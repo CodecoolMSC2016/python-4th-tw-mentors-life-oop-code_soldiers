@@ -3,18 +3,18 @@ from mentor import Mentor
 from student import Student
 import sys
 import time
+import os
 
-print("\n"*20)
-text = ["A long time ago in a galaxy far, far away...",
-        "An man from Bangladur, Humen Rajtnau was tired of mentorbots,",
+print("A long time ago in a galaxy far, far away...")
+time.sleep(3)
+os.system("clear")
+print("\n"*50)
+text = ["A man from India, Humen Rajtnau was tired of mentorbots,",
         "so he got started to implement some new extra features,",
         "but he did not realise a bug,",
         "which not only could destroy the entire CodeCool,",
         "but the whole programmer community..."
         ]
-
-error_message = 'Traceback (most recent call last):\n  File "<stdin>", line 36, in <module>\n' \
-                "IndentationError: expected an indented block"
 
 
 def print_text_slowly(lines, sleep):
@@ -24,10 +24,10 @@ def print_text_slowly(lines, sleep):
         print(line)
         time.sleep(sleep)
 
-print_text_slowly(text, 1)
+print_text_slowly(text, 1.33)
 
-
-
+error_message = 'Traceback (most recent call last):\n  File "<stdin>", line 36, in <module>\n' \
+                "IndentationError: expected an indented block"
 
 
 print("                       ______   ______    _______   _______                       ")
