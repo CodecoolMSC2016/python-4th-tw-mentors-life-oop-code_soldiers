@@ -1,6 +1,7 @@
 from time import sleep
 
-print("Welcome to Code Soldiers' auto debugger! Let's get debug your freakin' awsome code 😁 !\n")
+print("Welcome to Code Soldiers' auto debugger! Let's get debug your freakin' awesome code 😁 !\n")
+sleep(2)
 
 
 def printProgressBar(iteration, total, prefix='', suffix='', decimals=1, length=100, fill='█'):
@@ -31,17 +32,7 @@ for item in items:
     index += 1
     printProgressBar(index, width, prefix='Progress:', suffix='Complete', length=50)
 
-print("\n1 Error found: FileNotFoundError\nDescription: [Errno 2] No such file or directory: 'codecool_class.py'\n")
-print(input("Press enter to continue...\n"), end='\r')
-
-index = 0
-printProgressBar(index, width, prefix='Searching codecool_class.py:', suffix='Complete', length=50)
-for item in items:
-    sleep(0.2)
-    index += 1
-    printProgressBar(index, width, prefix='Searching codecool_class.py:', suffix='Complete', length=50)
-
-print("\nFile was found!\n")
+print("\n1 Error found: IndentationError\nDescription: expected an indented block'\n")
 print(input("Press enter to continue...\n"), end='\r')
 
 index = 0
@@ -62,7 +53,7 @@ with open("story.py", "w+") as output_file:
 
 print("\nDebugging was successfull!\n")
 sleep(1)
-for index in range(10, 0, -1):
+for index in range(9, 0, -1):
     text = "Code Soldiers' auto debugger will exit in {}. Have fun and do not worry, I will be back 😉 !".format(index)
     print(text, end='\r\r')
     sleep(1)
