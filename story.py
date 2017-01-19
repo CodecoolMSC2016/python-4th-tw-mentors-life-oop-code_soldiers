@@ -9,8 +9,8 @@ text = ["A long time ago in a galaxy far, far away...",
         ""
         ]
 
-error_message = 'Traceback (most recent call last):\n  File "<stdin>", line 1, in <module>\n' \
-                "FileNotFoundError: [Errno 2] No such file or directory: 'codecool_class.py'"
+error_message = 'Traceback (most recent call last):\n  File "<stdin>", line 36, in <module>\n' \
+                "IndentationError: expected an indented block"
 
 
 def print_text_slowly(lines, sleep):
