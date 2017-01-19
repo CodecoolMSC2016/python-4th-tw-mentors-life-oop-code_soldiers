@@ -17,6 +17,6 @@ class Mentor(Person):
             lines = csv_file.readlines()
         mentors_list = []
         for line in lines:
-            first, last, birth, gender, nickname = line.split(",")
+            first, last, birth, gender, nickname = line.strip("\n").split(",")
             mentors_list.append(cls(first, last, birth, gender, nickname))
         return mentors_list
