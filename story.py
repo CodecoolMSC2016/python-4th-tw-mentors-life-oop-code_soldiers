@@ -20,4 +20,7 @@ print("\n\n                          A Mentor's Life (in (n)OO way)")
 error_message = 'Traceback (most recent call last):\n  File "<stdin>", line 1, in <module>\n' \
                 "FileNotFoundError: [Errno 2] No such file or directory: 'codecool_class.py'"
 
-codecool_bp = CodecoolClass.create_local
+#print(error_message)
+#sys.exit(0)
+codecool_msc = CodecoolClass.generate_local()
+print(codecool_msc)
