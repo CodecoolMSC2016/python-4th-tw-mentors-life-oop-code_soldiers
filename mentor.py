@@ -8,8 +8,8 @@ class Mentor(Person):
         self.nickname = nickname
         self.device = None
 
-    def set_device(self, name, price, is_broken=False):
-        self.device = Device(name, price, is_broken)
+    def set_device(self, name, price):
+        self.device = Device(name, price)
 
     @classmethod
     def create_by_csv(cls, file_name):

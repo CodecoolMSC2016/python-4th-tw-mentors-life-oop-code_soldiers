@@ -4,6 +4,7 @@ from student import Student
 import sys
 import time
 import os
+import random
 
 
 os.system("clear")
@@ -18,18 +19,27 @@ text = ["A man from India, Humen Rajtnau was tired of mentorbots,",
         "Unfortunately   they  did  not  realise  a  deadly  bug,",
         "which  not  only  could  destroy  the  entire  CodeCool,",
         "but the whole programmer community..."]
-
 text += ["" for x in range(30)]
 
-def print_text_slowly(lines, sleep):
-    max_len = str(max(lines, key=len))
 
+def print_starwars(lines, sleep=1):
     for line in lines:
         print(line)
         time.sleep(sleep)
 
 
-print_text_slowly(text, 0.6)
+def print_text_slowly(lines, sleep=1):
+    for line in lines:
+        line_chars = ""
+        for char in line:
+            line_chars += char
+            print(line_chars, end='\r')
+            time.sleep(0.05)
+        time.sleep(sleep)
+        print()
+
+
+print_starwars(text, 0.6)
 os.system("clear")
 
 error_message = 'Traceback (most recent call last):\n  File "<stdin>", line 36, in <module>\n' \
@@ -50,12 +60,56 @@ print("   |   (----`|  |  |  | |  |     |  .--.  ||  | |  |__   |  |_)  |      |
 print("    \   \    |  |  |  | |  |     |  |  |  ||  | |   __|  |      /        \   \    ")
 print(".----)   |   |  `--'  | |  `----.|  '--'  ||  | |  |____ |  |\  \----.----)   |   ")
 print("|_______/     \______/  |_______||_______/ |__| |_______|| _| `._____|_______/    ")
-print("\n\n                          A Mentor's Life (in (n)OO way)")
+print("\n\n                          A MentorBot's Life (in (n)OO way)")
 time.sleep(5)
+# TODO: bots wanna
+main_story = ["One day when Humen Rajtnau went to Codecool Miskolc",
+              "<< CODECOOL_MSC GENERATED >>",
+              "he realised that the MentorBots needed an upgrade,",
+              "because they got boring and lazy, and their knowledge",
+              "has became outdated a long time ago.",
+              "So he started to collect all the MentorBots...",
+              "... after 5 hours he got so bored",
+              "he gave his task to codecoolers.",
+              "",
+              "The codecoolers started working on their laptops,",
+              "<< CODECOOLERS GET LAPTOPS >>",
+              "They started coding the bots...",
+              "Everybody worked hard, so their energy level decreased",
+              "<< CODECOOLERS ENERGY_LEVEL DECREASED >>",
+              "According to Waterfall model they started testing the bots.",
+              "<< MENTORBOTS GET DEVICES >>"]
 
+print_text_slowly(main_story[:1])
 codecool_msc = CodecoolClass.generate_local()
-print("<< CODECOOL_MSC GENERATED >>")
-print("One day when Humen Rajtnau went to Codecool Miskolc")
+time.sleep(1)
+print_text_slowly(main_story[1:6])
+time.sleep(3)
+print_text_slowly(main_story[6:10])
+for student in codecool_msc.students:
+    student.set_device("Fujitsu Laptop", 100)
+print_text_slowly(main_story[10:12])
+for index in range(5):
+    rand = random.randint(0, len(codecool_msc.students))
+    person1 = codecool_msc.students[rand]
+    person2 = codecool_msc.students[rand + 1]
+    person1_increase = random.randint(1, 20)
+    person2_decrease = random.randint(1, 30)
+    person1.knowledge_level += person1_increase
+    person2.energy_level -= person2_decrease
+    helping = ["'{}' asked for help from '{}'".format(person1.fullname, person2.fullname),
+               "{}'s knowledge increased by {} while {}'s energy decreased by {}".format(person1.first_name,
+                                                                                         person1_increase,
+                                                                                         person2.first_name,
+                                                                                         person2_decrease)]
+    print_text_slowly(helping)
+for student in codecool_msc.students:
+    student.energy_level -= random.randint(1, 10)
+print_text_slowly(main_story[12:14])
+for mentor in codecool_msc.mentors:
+    mentor.set_device("Alienware Laptop", 2000)
+print_text_slowly(main_story[14:])
+
 
 """ mindenki exmentor lesz, együtt elkezdenek inni,
 annyira részegek lesznek, hogy elpusztítják a codecoolt és mindenkit aki tud programozni,
