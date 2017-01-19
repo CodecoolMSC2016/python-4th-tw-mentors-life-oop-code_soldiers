@@ -78,7 +78,8 @@ main_story = ["One day when Humen Rajtnau went to Codecool Miskolc",
               "Everybody worked hard, so their energy level decreased",
               "<< CODECOOLERS ENERGY_LEVEL DECREASED >>",
               "According to Waterfall model they started testing the bots.",
-              "<< MENTORBOTS GET DEVICES >>"]
+              "<< MENTORBOTS GET DEVICES >>",
+              "<< CHANGING IMIBOT'S DEVICE TO A HOMEBREWER >>"]
 
 print_text_slowly(main_story[:1])
 codecool_msc = CodecoolClass.generate_local()
@@ -108,7 +109,10 @@ for student in codecool_msc.students:
 print_text_slowly(main_story[12:14])
 for mentor in codecool_msc.mentors:
     mentor.set_device("Alienware Laptop", 2000)
-print_text_slowly(main_story[14:])
+    if mentor.nickname.casefold() == "Imicsanga".casefold():
+        mentor.set_device("Homebrewer 2000", 5000)
+print_text_slowly(main_story[14:15])
+print_text_slowly(main_story[15:16])
 
 
 """ mindenki exmentor lesz, együtt elkezdenek inni,
